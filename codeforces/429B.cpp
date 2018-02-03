@@ -1,3 +1,5 @@
+//http://codeforces.com/contest/429/problem/B
+//https://www.hackerearth.com/practice/notes/dynamic-programming-problems-involving-grids/
 #include <iostream>
 #include <vector>
 #define LL long long
@@ -69,7 +71,7 @@ int main(){
 		quad4[n-1][j] = cal[n-1][j] + quad4[n-1][j+1];
 	}
 	for(int i=n-2;i>=0;i--){
-		for(int j=m-1;j>=0;j--){
+		for(int j=m-2;j>=0;j--){
 			quad4[i][j] = max(quad4[i+1][j], quad4[i][j+1]) + cal[i][j];
 		}
 	}
