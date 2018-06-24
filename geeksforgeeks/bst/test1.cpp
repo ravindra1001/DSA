@@ -5,7 +5,8 @@ void fun(){
 	cout<<"hello world"<<endl;
 }
 
-void fun2(){
+
+void fun3(){
 	cout<<"hello world"<<endl;
 }
 int main(){
